@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="Estilização/style.css">
+  <link rel="stylesheet" href="Estilização/mobile.css">
+  <link rel="stylesheet" href="Estilização/desktop.css">
   <title>Intro component with sign up form</title>
 </head>
 <body>
@@ -19,32 +20,32 @@
   <h3><span>Try it free 7 days</span> then $20/mo. thereafter</h3>
 
 <div class="card-formulario">
-  <form>
+  <form action="#">
     <div class="div-input">
       <input type="text" placeholder="First Name">
-      <img src="images/icon-error.svg" alt="Icone de erro">
-      <p>First Name cannot be empty</p>
+      <img class="icone" src="images/icon-error.svg" alt="Icone de erro">
+      <p class="mensagem">First Name cannot be empty</p>
     </div>
 
     <div class="div-input">
       <input type="text" placeholder="Last Name">
-      <img src="images/icon-error.svg" alt="Icone de erro">
-      <p>Last Name cannot be empty</p>
+      <img class="icone" src="images/icon-error.svg" alt="Icone de erro">
+      <p class="mensagem">Last Name cannot be empty</p>
    </div>
 
     <div class="div-input">
       <input type="email" placeholder="Email Address">
-      <img src="images/icon-error.svg" alt="Icone de erro">
-      <p>Looks like this is not an email</p>
+      <img class="icone" src="images/icon-error.svg" alt="Icone de erro">
+      <p class="mensagem">Looks like this is not an email</p>
     </div>
 
     <div class="div-input">
       <input type="password" placeholder="Password">
-      <img src="images/icon-error.svg" alt="Icone de erro">
-      <p>Password cannot be empty</p>
+      <img class="icone" src="images/icon-error.svg" alt="Icone de erro">
+      <p class="mensagem">Password cannot be empty</p>
    </div>
 
-    <input type="button" value="CLAIM YOUR FREE TRIAL">
+    <input class="botao-enviar" type="button" value="CLAIM YOUR FREE TRIAL">
     <p>By clicking the button, you are agreeing to our <a target="_blank" href="https://www.linkedin.com/in/leonardo2002/">Terms and Services</a></p>
   </form>
 </div> 

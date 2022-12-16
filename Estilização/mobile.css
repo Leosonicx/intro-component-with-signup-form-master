@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);  
+  color: white;
+  background-image: url(/images/bg-intro-mobile.png);
+  text-align: center;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2em;
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding: 1em 0em;
+}
+
+h3 {
+  background: #5E54A4;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 1em 3em;
+  color: #FFFFFF;
+}
+
+span {
+  font-weight: 700;
+  color: #FFF;
+}
+
+.card-formulario {
+  background: #FFFFFF;
+  margin-top: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  padding: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+
+input {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  background: #FFFFFF;
+  border: 1px solid #5E54A4;
+  border-radius: 5px;
+  color: hsl(246, 25%, 77%);
+  font-weight: 700;
+}
+
+.div-input {
+  width: 100%;
+
+}
+
+.botao-enviar {
+  background: #38CC8B;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 1em 0em;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.75em;
+  padding: 1em 1em 0;
+}
+
+p a {
+  text-decoration: none;
+  color: #FF7979;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 21px;
+}
+
+.icone {
+  position: absolute;
+  margin: .8em 0em 0em -3em;
+  opacity: 0;
+}
+
+.mensagem {
+  color: hsl(0, 100%, 74%);
+  padding-top: 0.5em 0em 0em 0em;
+  text-align: end;
+  font-style: italic;
+  display: none;
+}
+
+/* -------------- Aqui ficara os status de erro --------------*/
+.error input {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error input:focus {
+  color: hsl(0, 100%, 74%);
+}
+
+.error .icon {
+  opacity: 1;
+}
+
+.error .msg {
+  display: block;
+}
